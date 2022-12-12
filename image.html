@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <style>
+            #css{color:red}
+        </style>
+    </head>
+    <body>
+        <center>
+        <h1>html changes using javascript onclick method</h1>
+        <h1 id="abc">Are you programmer ..?</h1>
+        <button type="button" onclick='document.getElementById("abc").innerHTML="yes"'>click me</button>
+
+        <h1>Image change using javascript onclick method</h1>
+        <img id="image" src="back09.jpg">
+        <button type="button" onclick='document.getElementById("image").src="back45.jpg"'>click to change image</button>
+
+        <h1>css change using java script onclick method </h1>
+        <h1 id="css">im trying to change the css through the onclick method</h1>
+        <button type="button" onclick='document.getElementById("css").style.color="blue"'>click to change the color</button>
+
+         
+        <h1>hide and display</h1>
+        <h1 id="hide">let me check it will hide or not</h1>
+        <button type="button" onclick='document.getElementById("hide").style.display="none"'>click to hide </button>
+        <button type="button" onclick='document.getElementById("hide").style.display="block"'>click to display </button>
+        
+        <h1>Print pdf</h1>
+        <h1 id="A">output print method</h1>
+        <button type="button" onclick='print()'>click to know </button>
+
+        <script>
+             document.write("<h1>Comparisions with primitive and object type</h1>");
+            let a='4';
+            let b=new Number(4);
+            document.write("<h1> a==b is"+(a==b)+"</h1>")
+            document.write("<h1> a===b is"+(a===b)+"</h1>")
+
+            document.write("<h1>number conversions</h1>");
+            let m=20;
+            let n=m.toString(2);
+            let o=m.toString(8);
+            let t=m.toString(16);
+            document.write("<h3>answer in binary "+n+"</h3>")
+            document.write("<h3>answer in octal "+o+"</h3>")
+            document.write("<h3>answer in hexadecimal"+t+"</h3>")
+
+
+        </script>
+    </center>
+
+    </body>
+</html>
